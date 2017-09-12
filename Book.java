@@ -34,11 +34,16 @@ class Book {
      *    that.author
      *    that.title
      */
+  } 
+  // -> boolean
+  // returns true if this Book was published before the other 
+  boolean publishedBefore(Book that) {
+    if (this.year > that.year){
+      return true;
+    }else {
+      return false;
+    }
   }
- 
-  
-  // TODO design a function publishedBefore that accepts a Book and
-  //   returns true if this Book was published before the other 
   
   
 }
